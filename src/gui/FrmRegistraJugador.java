@@ -118,6 +118,7 @@ public class FrmRegistraJugador extends JFrame implements ActionListener
 			obj.setNombre(nom);
 			obj.setApellido(ape);
 			obj.setFechaNacimiento(Conversiones.toFecha(fec));
+			obj.setEstado(1);
 			
 			JugadorModel model = new JugadorModel();
 			int salida = model.insertaJugador(obj);
